@@ -19,11 +19,7 @@ function loadRandomImage() {
             var mainImage = $('#main-image');
             mainImage.attr('src', json.url);
             mainImage.attr('alt', 'Photo Competition image, ' + json.name);
-
-            $('#author-name').text(json.author);
-            $('#image-name').text(json.name);
-            $('#licence-info').text(json.license);
-            PicID = json.id;
+            SetImageDetails(json);
             $(".voting-button").attr("disabled", false)
             
         })
@@ -47,26 +43,32 @@ function loadTopRatedImage() {
             var topImage = $('#top-image');
             topImage.attr('src', json.url);
             topImage.attr('alt', 'Photo Competition image, ' + json.name);
-
-            $('#author-name').text(json.author);
-            $('#image-name').text(json.name);
-            $('#licence-info').text(json.license);
+            SetImageDetails(json);
             
         })
         .catch(function (err) {
             console.error('Request to /top failed: ', err);
         });
+    };
+
+function SetImageDetails(json){
+    $('#author-name').text(json.author);
+    $('#image-name').text(json.name);
+    $('#licence-info').text(json.license);
+    PicID = json.id;
+}
 
 function Upvote(){
-    $(".voting-button").attr("disabled", true)
+    $(".voting-button").attr("disabled", true);
     $.post(buildUrl('/id/' + PicID + '/vote/up'), "", loadRandomImage);
 };
 
 function Downvote(){
-    $(".voting-button").attr("disabled", true)
+    $(".voting-button").attr("disabled", true);
     $.post(buildUrl('/id/' + PicID + '/vote/down'), "", loadRandomImage);
 };
 
 $(function () {
     loadRandomImage();
+    loadTopRatedImage();
 });
