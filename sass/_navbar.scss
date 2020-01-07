@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #666;
 }
 
 .navbar-item {
@@ -30,5 +30,6 @@
 /* Change the link color to #111 (black) on hover */
 .navbar-item a:hover {
   background-color: #111;
+  border-radius: 10px;
 }
  
