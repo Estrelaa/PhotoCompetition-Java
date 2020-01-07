@@ -1,23 +1,34 @@
 // Partial for the Nav Bar
 
 .navbar {
-  background-color: #DDDDDD;
   height: 64px;
-  width: 100%;
+  width: auto;
   margin: 0 auto;
   
 }
 
 .navbar-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  height: 100%;
-  width: 95%;
-  margin: 0 auto;
+  list-style-type: none;
+  margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-  list-style: none;
+.navbar-item {
+  float: left;
+}
+
+.navbar-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar-item a:hover {
+  background-color: #111;
 }
  

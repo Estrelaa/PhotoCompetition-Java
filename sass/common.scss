@@ -6,9 +6,10 @@
 
 body {
   margin: 0;
-  background-image: url("/img/blissBlur.jpg");
+  background-image: url("/img/landscape-blur.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -19,7 +20,7 @@ body {
   padding: 0 24px;
 }
 
-.main-image {
+img {
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;

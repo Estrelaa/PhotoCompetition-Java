@@ -22,34 +22,42 @@
 }
 
 .navbar {
-  background-color: #DDDDDD;
   height: 64px;
-  width: 100%;
+  width: auto;
   margin: 0 auto;
 }
 
 .navbar-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 95%;
-  margin: 0 auto;
+  list-style-type: none;
+  margin: 0;
   padding: 0;
-  list-style: none;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar-item {
+  float: left;
+}
+
+.navbar-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar-item a:hover {
+  background-color: #111;
 }
 
 body {
   margin: 0;
-  background-image: url("/img/blissBlur.jpg");
+  background-image: url("/img/landscape-blur.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -60,7 +68,7 @@ body {
   padding: 0 24px;
 }
 
-.main-image {
+img {
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
