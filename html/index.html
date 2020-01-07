@@ -40,29 +40,28 @@
     <div class="image-container">
         <!-- src and alt attribute will be populated by index.js on page load -->
         <img id="main-image" class="main-image" src="">
+        <table class="image-details">
+            <tbody>
+                <tr>
+                    <td><b>Author</b></td>
+                    <td id="author-name">TODO: Fill in author details.</td>
+                </tr>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td id="image-name">TODO: Fill in image details.</td>
+                </tr>
+                <tr>
+                    <td><b>Licence</b></td>
+                    <td id="licence-info">TODO: Fill in licence details.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="voting-buttons">
+            <button class="voting-button vote-up" onclick="Upvote()">I love it</button>
+            <button class="voting-button vote-down" onclick="Downvote()">I hate it</button>
+        </div>
     </div>
 
-    <div class="voting-buttons">
-        <button class="voting-button vote-up" onclick="Upvote()">I love it</button>
-        <button class="voting-button vote-down" onclick="Downvote()">I hate it</button>
-    </div>
-
-    <table class="image-details">
-        <tbody>
-            <tr>
-                <td><b>Author</b></td>
-                <td id="author-name">TODO: Fill in author details.</td>
-            </tr>
-            <tr>
-                <td><b>Name</b></td>
-                <td id="image-name">TODO: Fill in image details.</td>
-            </tr>
-            <tr>
-                <td><b>Licence</b></td>
-                <td id="licence-info">TODO: Fill in licence details.</td>
-            </tr>
-        </tbody>
-    </table>
 </div>
 
 </body>
