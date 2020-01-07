@@ -49,13 +49,16 @@
   text-decoration: none;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
-  border-bottom: 2px solid red;
 }
 
 /* Change the link color to #111 (black) on hover */
 .navbar-item a:hover {
   background-color: #111;
   border-radius: 10px;
+}
+
+.navbar-item.current {
+  border-bottom: 2px solid red;
 }
 
 body {
