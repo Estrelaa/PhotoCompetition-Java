@@ -61,7 +61,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif, Arial;
+}
+
+head {
+  font-family: 'Roboto', Helvetica, sans-serif, Arial;
 }
 
 .main-content {
