@@ -25,6 +25,8 @@
   height: 64px;
   width: auto;
   margin: 0 auto;
+  padding-left: -24px;
+  padding-right: -24px;
 }
 
 .navbar-list {
@@ -66,7 +68,6 @@ body {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 24px;
 }
 
 img {
@@ -99,6 +100,7 @@ button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: white;
 }
 
 .image-details {
