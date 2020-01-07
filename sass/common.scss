@@ -26,10 +26,11 @@ img {
   margin-right: auto;
   display: block;
   border-radius: 10px;
+  box-shadow: 5px 5px 2px black;
 }
 button {
   border-radius: 10px;
-  box-shadow: 10px;
+  box-shadow: 5px 5px 2px black;
 }
 
 .page-title {
@@ -45,4 +46,5 @@ button {
   display: block;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 5px 5px 2px black;
 }
