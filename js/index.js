@@ -2,6 +2,7 @@
 // JavaScript for use with the index page.
 
 var PicID;
+var PicURL;
 
 function loadRandomImage() {
     $(".voting-button").attr("disabled", true)
@@ -56,16 +57,19 @@ function SetImageDetails(json){
     $('#image-name').text(json.name);
     $('#licence-info').text(json.license);
     PicID = json.id;
+    PicURL = json.url;
 }
 
 function Upvote(){
     $(".voting-button").attr("disabled", true);
     $.post(buildUrl('/id/' + PicID + '/vote/up'), "", loadRandomImage);
+    //$('body').css('background-image', 'url(' + PicURL + ')');
 };
 
 function Downvote(){
     $(".voting-button").attr("disabled", true);
     $.post(buildUrl('/id/' + PicID + '/vote/down'), "", loadRandomImage);
+    
 };
 
 $(function () {

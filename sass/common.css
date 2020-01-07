@@ -49,6 +49,7 @@
   text-decoration: none;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
+  border-bottom: 2px solid red;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -90,7 +91,7 @@ img {
 
 button {
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 150%;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
   cursor: pointer;
@@ -123,7 +124,7 @@ button:hover {
   float: left;
   margin-left: 5%;
   word-wrap: break-word;
-  font-size: large;
+  font-size: 120%;
 }
 
 .voting-buttons {
