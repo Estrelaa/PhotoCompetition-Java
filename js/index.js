@@ -30,9 +30,10 @@ function loadRandomImage() {
         });
 }
 
-$('voting-button vote-up').click(function(){   
-    $.post(fetch(buildUrl('/images/id/" + PicID + "/vote/up')))
-});
+function Upvote(){   
+    $.post(buildUrl('/images/id/' + PicID + '/vote/up'));
+    console.log(response.status);
+};
 
 $(function () {
     loadRandomImage();
