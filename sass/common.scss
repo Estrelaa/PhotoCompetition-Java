@@ -11,6 +11,10 @@
   padding-bottom: 16px;
 }
 
+//Variables
+$shadows: 5px 5px 2px black;
+$fonts: 'Roboto', Helvetica, sans-serif, Arial;
+
 // Global styling
   
 body {
@@ -19,11 +23,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  font-family: 'Roboto', Helvetica, sans-serif, Arial;
+  font-family: $fonts;
 }
 
 head {
-  font-family: 'Roboto', Helvetica, sans-serif, Arial;
+  font-family: $fonts;
 }
 
 button {
@@ -35,7 +39,7 @@ button {
 
 button:hover {
   border-radius: 10px;
-  box-shadow: 5px 5px 2px black;
+  box-shadow: $shadows
 }
 input {
   display: block;
@@ -53,7 +57,7 @@ input {
   margin-right: 5%;
   display: block;
   border-radius: 10px;
-  box-shadow: 5px 5px 2px black;
+  box-shadow: $shadows;
   float: right;
 }
 .top-image {
@@ -63,7 +67,7 @@ input {
   margin-right: 5%;
   display: block;
   border-radius: 10px;
-  box-shadow: 5px 5px 2px black;
+  box-shadow: $shadows;
   float: right;
 }
 .image-details {
@@ -74,7 +78,7 @@ input {
   display: block;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 5px 5px 2px black;
+  box-shadow: $shadows;
   float: left;
   margin-left: 5%;
   word-wrap: break-word;
@@ -88,7 +92,7 @@ input {
   display: block;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 5px 5px 2px black;
+  box-shadow: $shadows;
   word-wrap: break-word;
   font-size: 120%;
 }
@@ -106,7 +110,7 @@ input {
   display: block;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 5px 5px 2px black;
+  box-shadow: $shadows;
   word-wrap: break-word;
   font-size: 170%;
 }
@@ -119,6 +123,6 @@ input {
   color: black;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 5px 5px 2px black;
+  box-shadow: $shadows;
   font-size: 170%;
 }
