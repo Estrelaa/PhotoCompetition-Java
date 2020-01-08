@@ -6,14 +6,12 @@
   margin: 0 auto;
   padding-left: -24px;
   padding-right: -24px;
-  
 }
 
 .navbar-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #666;
 }
 
@@ -37,5 +35,10 @@
 }
 .navbar-item.current{
   border-bottom: 2px solid red;
+}
+.animate {
+  position: relative;
+  width: 42px;
+  height: 42px;
 }
  

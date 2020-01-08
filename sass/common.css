@@ -33,7 +33,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #666;
 }
 
@@ -61,6 +60,12 @@
   border-bottom: 2px solid red;
 }
 
+.animate {
+  position: relative;
+  width: 42px;
+  height: 42px;
+}
+
 body {
   margin: 0;
   background-image: url("/img/landscape-blur.jpg");
@@ -80,7 +85,7 @@ head {
   margin: 0 auto;
 }
 
-img {
+.main-image {
   max-width: 56%;
   max-height: 50%;
   margin-left: auto;
