@@ -16,6 +16,9 @@
 
     <!-- Vendor JS -->
     <script src="../js/vendor/jquery-3.3.1.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/upload-image.js"></script>
 </head>
 
 <body>
@@ -25,19 +28,27 @@
     <ul class="navbar-list">
         <li class="navbar-item"><a class="navbar-title" href="index.html">Photo Competition</a></li>
         <li class="navbar-item"><a class="navbar-link" href="top-image.html">Top image</a></li>
-        <li class="navbar-item "><a class="navbar-link" href="about.html">About</a></li>
         <li class="navbar-item current"><a class="navbar-link" href="Upload-picture.html">Upload a picture</a></li>
-
+        <li class="navbar-item "><a class="navbar-link" href="about.html">About</a></li>
     </ul>
 </nav>
 
 <!-- Page content -->
 <div class="main-content">
-    <form action="" method="POST" class="form">
-        <div class ="form">
-            <label for="image">Image you want to Upload: </label>
-            <input type="file" name="image">
-        </div>
+    <form method="POST" class="form">
+        <label for="image">Image you want to Upload:  </label>
+        <input type="file" name="image"><br>
+
+        <label for="description">Description of Image:  </label>
+        <input type="text" name="description"><br>
+
+        <label for="author">Author:  </label>
+        <input type="text" name="author"><br>
+
+        <label for="Licence Type">Licence Type:  </label>
+        <input type="text" name="Licence Type"><br>
+        
+        <input type="submit" value="Upload Image">
     </form>
 </div>
 </form>

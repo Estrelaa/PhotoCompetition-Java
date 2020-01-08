@@ -63,7 +63,6 @@ function SetImageDetails(json){
 function Upvote(){
     $(".voting-button").attr("disabled", true);
     $.post(buildUrl('/id/' + PicID + '/vote/up'), "", loadRandomImage);
-    //$('body').css('background-image', 'url(' + PicURL + ')');
 };
 
 function Downvote(){

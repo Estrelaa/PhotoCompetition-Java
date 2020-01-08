@@ -153,6 +153,19 @@ button:hover {
   font-size: 120%;
 }
 
+.form {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 2px black;
+          box-shadow: 5px 5px 2px black;
+  word-wrap: break-word;
+  font-size: 120%;
+}
+
 .voting-buttons {
   float: left;
   margin-left: 13%;

@@ -42,7 +42,7 @@
     <div class="image-container">
         <!-- src and alt attribute will be populated by index.js on page load -->
         <img tabindex="0" id="main-image" class="main-image" src="" alt="">
-        <table class="image-details">
+        <table  class="image-details">
             <caption tabindex="0" hidden="true">Details of the current image</caption>
             <tbody>
                 <tr>
@@ -60,8 +60,8 @@
             </tbody>
         </table>
         <div class="voting-buttons">
-            <button class="voting-button vote-up" onclick="Upvote()">I love it</button>
-            <button class="voting-button vote-down" onclick="Downvote()">I hate it</button>
+            <button aria-label="I love it" class="voting-button vote-up" onclick="Upvote()">I love it</button>
+            <button aria-label="I hate it" class="voting-button vote-down" onclick="Downvote()">I hate it</button>
         </div>
     </div>
 
