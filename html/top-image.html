@@ -25,40 +25,41 @@
 <body>
 
 <!-- Navigation bar -->
-<nav class="navbar main-content">
+<nav class="navbar main-content"">
     <ul class="navbar-list">
-        <li class="navbar-item"><a class="navbar-title" href="index.html">Photo Competition</a></li>
-        <li class="navbar-item current"><a class="navbar-link" href="top-image.html">Top image</a></li>
+        <li class="navbar-item current"><a class="navbar-title" href="index.html">Photo Competition</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="top-image.html">Top image</a></li>
         <li class="navbar-item"><a class="navbar-link" href="Upload-picture.html">Upload a picture</a></li>
         <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
+        <li class="animate navbar-item" id="animate"><img src="/img/Mario-run.gif"></li>
     </ul>
 </nav>
-
 <!-- Page content -->
-<div class="main-content">
-    <h1 class="page-title">Photo Competition</h1>
+<div class="main-content" role="main">
+
+    <h1 tabindex="0"class="page-title"><b><u>Photo Competition</u></b></h1>
 
     <div class="image-container">
         <!-- src and alt attribute will be populated by index.js on page load -->
-        <img id="top-image" class="top-image" src="">
+        <img tabindex="0" id="top-image" class="top-image" src="" alt="">
+        <table class="image-details">
+            <caption tabindex="0" hidden="true">Details of the current image</caption>
+            <tbody>
+                <tr>
+                    <td tabindex="0"><b>Author</b></td>
+                    <td tabindex="0" id="author-name">TODO: Fill in author details.</td>
+                </tr>
+                <tr>
+                    <td tabindex="0"><b>Name</b></td>
+                    <td tabindex="0" id="image-name">TODO: Fill in image details.</td>
+                </tr>
+                <tr>
+                    <td tabindex="0"><b>Licence</b></td>
+                    <td tabindex="0" id="licence-info">TODO: Fill in licence details.</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-
-    <table class="image-details">
-        <tbody>
-            <tr>
-                <td><b>Author</b></td>
-                <td id="author-name">TODO: Fill in author details.</td>
-            </tr>
-            <tr>
-                <td><b>Name</b></td>
-                <td id="image-name">TODO: Fill in image details.</td>
-            </tr>
-            <tr>
-                <td><b>Licence</b></td>
-                <td id="licence-info">TODO: Fill in licence details.</td>
-            </tr>
-        </tbody>
-    </table>
 </div>
 
 </body>

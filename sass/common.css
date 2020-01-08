@@ -85,6 +85,20 @@ head {
   font-family: 'Roboto', Helvetica, sans-serif, Arial;
 }
 
+button {
+  border-radius: 10px;
+  font-size: 150%;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 2px black;
+          box-shadow: 5px 5px 2px black;
+}
+
 .main-content {
   width: 100%;
   max-width: 100%;
@@ -103,18 +117,16 @@ head {
   float: right;
 }
 
-button {
-  border-radius: 10px;
-  font-size: 150%;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-button:hover {
+.top-image {
+  max-width: 56%;
+  max-height: 50%;
+  margin-left: auto;
+  margin-right: 5%;
+  display: block;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 2px black;
           box-shadow: 5px 5px 2px black;
+  float: right;
 }
 
 .page-title {

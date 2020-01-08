@@ -17,6 +17,18 @@ head {
   font-family: 'Roboto', Helvetica, sans-serif, Arial;
 }
 
+button {
+  border-radius: 10px;
+  font-size: 150%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px black;
+}
+
 .main-content {
   width: 100%;
   max-width: 100%;
@@ -34,17 +46,16 @@ head {
   box-shadow: 5px 5px 2px black;
   float: right;
 }
-button {
-  border-radius: 10px;
-  font-size: 150%;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-button:hover {
+.top-image {
+  max-width: 56%;
+  max-height: 50%;
+  margin-left: auto;
+  margin-right: 5%;
+  display: block;
   border-radius: 10px;
   box-shadow: 5px 5px 2px black;
+  float: right;
 }
-
 .page-title {
   display: block;
   text-align: center;
