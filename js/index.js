@@ -72,23 +72,18 @@ function Downvote(){
     
 };
 
-$(function () {
-    loadRandomImage();
-    loadTopRatedImage();
-});
-
-$(document).ready(function(e) {
-    var width = "+=" + $(document).width();
+function animation() {
+    var width = "+=" + window.innerWidth / 1.5;
 
     function goRight() {
-        $("#animate").animate({
+        $("#animate").css("transform","rotateY(0deg)").animate({
         left: width
       }, 5000, function() {
          setTimeout(goLeft, 50);
       });
     }
     function goLeft() {
-        $("#animate").animate({
+        $("#animate").css("transform","rotateY(180deg)").animate({
         left: 0
       }, 5000, function() {
          setTimeout(goRight, 50);
@@ -96,4 +91,11 @@ $(document).ready(function(e) {
     }
 
     setTimeout(goRight, 50);
+}
+
+$(function () {
+    loadRandomImage();
+    loadTopRatedImage();
 });
+
+$(document).ready(animation);

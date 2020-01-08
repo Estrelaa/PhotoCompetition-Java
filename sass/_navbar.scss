@@ -36,7 +36,12 @@
 .navbar-item.current{
   border-bottom: 2px solid red;
 }
-.animate {
+.navbar-item.animate {
+  position: relative;
+  width: 42px;
+  height: 42px;
+}
+.navbar-item.animate img {
   position: relative;
   width: 42px;
   height: 42px;
