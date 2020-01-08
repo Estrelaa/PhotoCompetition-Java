@@ -72,6 +72,13 @@
   height: 42px;
 }
 
+.image-details, .form, .about, .page-title {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 body {
   margin: 0;
   background-image: url("/img/landscape-blur.jpg");
@@ -108,7 +115,6 @@ input {
 .main-content {
   width: 100%;
   max-width: 100%;
-  margin: 0 auto;
 }
 
 .main-image {
@@ -133,15 +139,6 @@ input {
   -webkit-box-shadow: 5px 5px 2px black;
           box-shadow: 5px 5px 2px black;
   float: right;
-}
-
-.page-title {
-  display: block;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
 }
 
 .image-details {
@@ -188,6 +185,21 @@ input {
   -webkit-box-shadow: 5px 5px 2px black;
           box-shadow: 5px 5px 2px black;
   word-wrap: break-word;
+  font-size: 170%;
+}
+
+.page-title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 2px black;
+          box-shadow: 5px 5px 2px black;
   font-size: 170%;
 }
 /*# sourceMappingURL=common.css.map */

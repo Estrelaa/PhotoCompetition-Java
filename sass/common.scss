@@ -2,6 +2,15 @@
 @import 'index';
 @import 'navbar';
 
+// set Shared props
+
+%padding-borders {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 // Global styling
   
 body {
@@ -36,10 +45,7 @@ input {
 .main-content {
   width: 100%;
   max-width: 100%;
-  margin: 0 auto;
-
 }
-
 .main-image {
   max-width: 56%;
   max-height: 50%;
@@ -60,15 +66,9 @@ input {
   box-shadow: 5px 5px 2px black;
   float: right;
 }
-.page-title {
-  display: block;
-  text-align: center;
-  justify-content: center;
-  color: white;
-}
-
 .image-details {
   max-width: 30%;
+  @extend %padding-borders;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -84,6 +84,7 @@ input {
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
+  @extend %padding-borders;
   display: block;
   background-color: white;
   border-radius: 10px;
@@ -99,6 +100,7 @@ input {
 }
 .about {
   max-width: 60%;
+  @extend %padding-borders;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -106,5 +108,17 @@ input {
   border-radius: 10px;
   box-shadow: 5px 5px 2px black;
   word-wrap: break-word;
+  font-size: 170%;
+}
+.page-title {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  @extend %padding-borders;
+  display: block;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px black;
   font-size: 170%;
 }
