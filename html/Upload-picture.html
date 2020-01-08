@@ -18,6 +18,7 @@
     <script src="../js/vendor/jquery-3.3.1.js"></script>
 
     <!-- Custom JS -->
+    <script src="../js/common.js"></script>
     <script src="../js/upload-image.js"></script>
 </head>
 
@@ -35,19 +36,19 @@
 
 <!-- Page content -->
 <div class="main-content">
-    <form method="POST" class="form">
+    <form method="POST" class="form" id="Upload-picture" >
         <label for="image">Image you want to Upload:  </label>
-        <input type="file" name="image"><br>
+        <input type="file" name="image" id="image"><br>
 
         <label for="description">Description of Image:  </label>
-        <input type="text" name="description"><br>
+        <input type="text" name="description" id="description"><br>
 
         <label for="author">Author:  </label>
-        <input type="text" name="author"><br>
+        <input type="text" name="author" id="author"><br>
 
-        <label for="Licence Type">Licence Type:  </label>
-        <input type="text" name="Licence Type"><br>
-        
+        <label for="Licence">Licence:  </label>
+        <input type="text" name="Licence" id="Licence"><br>
+
         <input type="submit" value="Upload Image">
     </form>
 </div>

@@ -99,6 +99,12 @@ button:hover {
           box-shadow: 5px 5px 2px black;
 }
 
+input {
+  display: block;
+  margin-right: auto;
+  margin-left: 20%;
+}
+
 .main-content {
   width: 100%;
   max-width: 100%;
