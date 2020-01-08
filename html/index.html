@@ -35,26 +35,27 @@
     </ul>
 </nav>
 <!-- Page content -->
-<div class="main-content">
+<div class="main-content" role="main">
 
-    <h1 class="page-title"><b><u>Photo Competition</u></b></h1>
+    <h1 tabindex="0"class="page-title"><b><u>Photo Competition</u></b></h1>
 
     <div class="image-container">
         <!-- src and alt attribute will be populated by index.js on page load -->
-        <img id="main-image" class="main-image" src="">
+        <img tabindex="0" id="main-image" class="main-image" src="" alt="">
         <table class="image-details">
+            <caption tabindex="0" hidden="true">Details of the current image</caption>
             <tbody>
                 <tr>
-                    <td><b>Author</b></td>
-                    <td id="author-name">TODO: Fill in author details.</td>
+                    <td tabindex="0"><b>Author</b></td>
+                    <td tabindex="0" id="author-name">TODO: Fill in author details.</td>
                 </tr>
                 <tr>
-                    <td><b>Name</b></td>
-                    <td id="image-name">TODO: Fill in image details.</td>
+                    <td tabindex="0"><b>Name</b></td>
+                    <td tabindex="0" id="image-name">TODO: Fill in image details.</td>
                 </tr>
                 <tr>
-                    <td><b>Licence</b></td>
-                    <td id="licence-info">TODO: Fill in licence details.</td>
+                    <td tabindex="0"><b>Licence</b></td>
+                    <td tabindex="0" id="licence-info">TODO: Fill in licence details.</td>
                 </tr>
             </tbody>
         </table>
