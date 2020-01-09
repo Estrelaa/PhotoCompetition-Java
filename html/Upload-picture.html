@@ -40,7 +40,7 @@
     <h1 tabindex="0" class="page-title"><b><u>Upload a photo for the Competition!</u></b></h1>
 
     <form method="POST" class="form" id="Upload-picture" >
-        <label for="image">Image you want to Upload:  </label>
+        <label for="image">Image to upload:  </label>
         <input type="file" name="image" id="image"><br>
 
         <label for="description">Description of Image:  </label>
@@ -50,7 +50,13 @@
         <input type="text" name="author" id="author"><br>
 
         <label for="Licence">Licence:  </label>
-        <input type="text" name="Licence" id="Licence"><br>
+        <select name="Licence" id="Licence">
+            <option value="CC_BY">Creative Commons Attribution (CC_BY)</option>
+            <option value="CC_BY_SA">Creative Commons Share-alike (CC_BY_SA)</option>
+            <option value="CC_BY_ND">Creative Commons No Derivative Works (CC_BY_ND)</option>
+        </select><br>
+        <p>Not sure which license to? Use <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Creative_commons_license_spectrum.svg/640px-Creative_commons_license_spectrum.svg.png?1578566104217" target="_blank">
+        this infograph</a></p>
 
         <input type="submit" value="Upload Image">
     </form>
