@@ -1,7 +1,14 @@
+const sleep = (milliseconds) => {
+    return new Promise(resolve => setTimeout(resolve, milliseconds))
+  }
 
 function registerSubmit() {
     $("#Upload-picture").submit(function(event){
         event.preventDefault()
+        $("#submit-upload-request").attr("disabled", true);
+        $(".upload-feedback").text("Processing...");
+        $(".upload-feedback").css("color", "darkorange");
+        $("#feedback").show();
 
         const formData = new FormData();
         const fileField = document.querySelector('input[type="file"]');
@@ -23,10 +30,18 @@ function registerSubmit() {
         .then((response) => response.json())
         .then((result) => {
             console.log('Success:', result);
+
+            $(".upload-feedback").text("Upload Sucessful");
+            $(".upload-feedback").css("color", "darkgreen");
         })
         .catch((error) => {
             console.error('Error:', error);
+
+            $(".upload-feedback").text("Upload Failed: " + error);
+            $(".upload-feedback").css("color", "darkred");
         });
+
+        $("#submit-upload-request").attr("disabled", false);
     });
 }
 

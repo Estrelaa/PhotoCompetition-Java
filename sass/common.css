@@ -72,7 +72,7 @@
   height: 42px;
 }
 
-.image-details, .form, .about, .page-title {
+.image-details, .form, .about, .page-title, .upload-feedback, .submit-upload-request {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
@@ -201,5 +201,36 @@ input {
   -webkit-box-shadow: 5px 5px 2px black;
           box-shadow: 5px 5px 2px black;
   font-size: 170%;
+}
+
+.upload-feedback {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 2px black;
+          box-shadow: 5px 5px 2px black;
+  font-size: 170%;
+}
+
+.submit-upload-request {
+  border-radius: 10px;
+  font-size: 150%;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit-upload-request:hover {
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 2px black;
+          box-shadow: 5px 5px 2px black;
 }
 /*# sourceMappingURL=common.css.map */

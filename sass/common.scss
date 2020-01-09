@@ -126,3 +126,28 @@ input {
   box-shadow: $shadows;
   font-size: 170%;
 }
+.upload-feedback{
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  @extend %padding-borders;
+  display: block;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: $shadows;
+  font-size: 170%;
+}
+.submit-upload-request{
+    border-radius: 10px;
+    font-size: 150%;
+    transition-duration: 0.4s;
+    @extend %padding-borders;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+.submit-upload-request:hover {
+border-radius: 10px;
+box-shadow: $shadows
+}

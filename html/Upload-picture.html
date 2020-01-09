@@ -55,11 +55,15 @@
             <option value="CC_BY_SA">Creative Commons Share-alike (CC_BY_SA)</option>
             <option value="CC_BY_ND">Creative Commons No Derivative Works (CC_BY_ND)</option>
         </select><br>
-        <p>Not sure which license to? Use <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Creative_commons_license_spectrum.svg/640px-Creative_commons_license_spectrum.svg.png?1578566104217" target="_blank">
+        <p tabindex="0">Not sure which license to? Use <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Creative_commons_license_spectrum.svg/640px-Creative_commons_license_spectrum.svg.png?1578566104217" target="_blank">
         this infograph</a></p>
 
-        <input type="submit" value="Upload Image">
+        <input type="submit" class="submit-upload-request" id="submit-upload-request" value="Upload Image">
     </form>
+
+    <div id="feedback" hidden>
+        <h1 tabindex="0" class="upload-feedback" ><b>Processing</b></h1>
+    </div>
 </div>
 </body>
 </html>
