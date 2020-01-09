@@ -27,7 +27,27 @@ function registerSubmit() {
             method: 'POST',
             body: formData
         })
-        .then((response) => response.json())
+        .then(function (response) {
+            if (response.status !== 200) {
+                if (response.status == 400) {
+                    $(".upload-feedback").text("Upload Failed: error 400, invalid input" );
+                    $(".upload-feedback").css("color", "darkred");
+                }         
+                if (response.status == 404){
+                    $(".upload-feedback").text("Upload Failed: Error 404, please try again!");
+                    $(".upload-feedback").css("color", "darkred");
+                }   
+                if (response.status == 413){
+                    $(".upload-feedback").text("Upload Failed: Error 413, the image you are uploading is too large!");
+                    $(".upload-feedback").css("color", "darkred");
+                } 
+                else {
+                    $(".upload-feedback").text("Upload Failed, no error details found");
+                    $(".upload-feedback").css("color", "darkred");
+                }        
+            }
+            return response.json();
+        })
         .then((result) => {
             console.log('Success:', result);
 
