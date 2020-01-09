@@ -72,5 +72,3 @@ function animation() {
 $(function () {
     loadRandomImage();
 });
-
-$(document).ready(animation);
