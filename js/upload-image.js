@@ -1,7 +1,3 @@
-const sleep = (milliseconds) => {
-    return new Promise(resolve => setTimeout(resolve, milliseconds))
-  }
-
 function registerSubmit() {
     $("#Upload-picture").submit(function(event){
         event.preventDefault()
@@ -28,7 +24,6 @@ function registerSubmit() {
         $("#submit-upload-request").attr("disabled", false);
     });
 }
-
 function DisplayErrorMessegeToUser(response){
     if (response.status == 400) {
         $(".upload-feedback").text("Upload Failed: error 400, invalid input" );
@@ -71,5 +66,4 @@ function SendRequestToServer(FormData) {
         $(".upload-feedback").css("color", "darkred");
     });
 }
-
 $(document).ready(registerSubmit);
